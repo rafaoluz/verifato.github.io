@@ -1,17 +1,15 @@
 .desenvolvedores-bg {
-    background: var(--cor-0);
+    background: var(--cor-11);
 }
 
 .desenvolvedores-conteudo {
     align-self: end;
-    padding-bottom: 50px;
+    padding-bottom: 20px;
 }
 
 .desenvolvedores h1 {
-    padding-top: 20px;
-    margin-top: 35px;
+    padding-top: 60px;
     margin-bottom: 60px;
-    color: var(--cor-12);
     text-align: center;
 }
 
@@ -29,10 +27,10 @@
 
 .desenvolvedores-conteudo > p {
     padding-top: 60px;
+    padding-bottom: 60px;
     text-align: center;
     font-weight: bold;
 }
-
 
 @media (max-width: 800px) {
     .desenvolvedores-bg {
@@ -43,7 +41,7 @@
         padding-bottom: 1px;
     }
     .desenvolvedores h1 {
-        padding-top: 0;
+        padding-top: 20px;
         margin-bottom: 16px;
     }
     .desenvolvedores-conteudo > p {

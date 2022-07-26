@@ -15,6 +15,7 @@
 @import "./home/tecnologias.css";
 @import "./home/depoimento.css";
 @import "./home/desenvolvedores.css";
+@import "./home/faq_lista.css";
 
 /* Sobre */ 
 @import "./sobre/sobre.css";
@@ -87,5 +88,36 @@
 
 [data-slide-nav] > button.active {
     background: var(--cor-p1);
+}
+
+.js .js-accordion dd {
+    display: none;
+}
+
+.js-accordion dt::after {
+    content: '⬎';
+    margin-left: 10px;
+    cursor: pointer;
+}
+
+.js-accordion dt.ativo::after {
+    content: '⬏';
+}
+
+.js-accordion dd.ativo {
+    display: block;
+    animation: slideDown .5s forwards;
+}
+
+@keyframes slideDown {
+    from {
+        opacity: 0;
+        max-height: 0;
+    }
+
+    to {
+        max-height: 200px;
+        opacity: 1;
+    }
 }
 
